@@ -1,0 +1,14 @@
+requirements = """streamlit
+pandas
+numpy
+tensorflow
+scikit-learn
+"""
+with open('requirements.txt', 'w') as f:
+    f.write(requirements)
+
+# Mengekstrak folder models menjadi models.zip agar bisa didownload
+import os
+os.system('zip -r models.zip models/')
+
+print("✅ requirements.txt dan models.zip siap didownload!")
